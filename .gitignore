@@ -1,0 +1,17 @@
+# Python virtual environment
+venv/
+
+# Model files (large)
+models/finetuned/*
+models/pretrained/*
+
+# Sensitive data
+.env
+
+# Logs and temp files
+litcodechat.log
+__pycache__/
+*.pyc
+
+# Large processed files
+data/processed/ocr_output.pdf

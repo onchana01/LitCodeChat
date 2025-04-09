@@ -1,0 +1,37 @@
+# General project settings
+project:
+  name: "LitCode Chat"
+  book: "Python_Datascience.pdf"
+
+# File paths
+paths:
+  raw_data: "data/raw/Python_Datascience.pdf"
+  processed_data: "data/processed/book_text.txt"
+  pretrained_models:
+    retrieval: "models/pretrained/distilbert"
+    generation: "models/pretrained/gpt2"
+  finetuned_models:
+    retrieval: "models/finetuned/litcode_model"
+    generation: "models/finetuned/litcode_model_gpt2"
+
+# Model settings
+models:
+  retrieval:
+    name: "distilbert-base-uncased"
+    max_length: 512
+  generation:
+    name: "gpt2"
+    max_length: 100
+    temperature: 0.7
+    top_p: 0.9
+
+# Training settings
+training:
+  epochs: 3
+  batch_size: 8
+  save_steps: 500
+  save_total_limit: 2
+
+# Telegram settings
+telegram:
+  token_env_var: "TELEGRAM_TOKEN"  # Name of the environment variable in .env
