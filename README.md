@@ -89,15 +89,15 @@ Explanation:
 - groupby('Department') splits the DataFrame by unique Department values.
 - .mean() computes the average Salary per group.
 
-## Future Improvements
+Future Improvements
 - Enhance model training with more epochs or a larger dataset.
 - Add support for NumPy, Matplotlib, and other book topics.
 - Improve retrieval with embeddings for better context.
 
-## License
+License
 MIT License (feel free to adjust).
 
-## Acknowledgments
+Acknowledgments
 - *"Python Data Science Handbook"* by Jake VanderPlas.
 - Built with ❤️ by [onchana01](https://github.com/onchana01).
 
